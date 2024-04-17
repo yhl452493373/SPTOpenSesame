@@ -6,6 +6,7 @@ using EFT.Interactive;
 using EFT;
 using HarmonyLib;
 
+
 namespace SPTOpenSesame.Helpers
 {
     public static class InteractionHelpers

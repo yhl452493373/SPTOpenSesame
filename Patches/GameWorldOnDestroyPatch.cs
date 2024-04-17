@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Reflection;
 using Aki.Reflection.Patching;
 using EFT;
 
@@ -13,7 +8,7 @@ namespace SPTOpenSesame.Patches
     {
         protected override MethodBase GetTargetMethod()
         {
-            return typeof(GameWorld).GetMethod("OnDestroy", BindingFlags.Public | BindingFlags.Instance);
+            return typeof(GameWorld).GetMethod(nameof(GameWorld.OnDestroy), BindingFlags.Public | BindingFlags.Instance);
         }
 
         [PatchPostfix]

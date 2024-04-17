@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using Aki.Reflection.Patching;
 using EFT;
 using EFT.Interactive;
@@ -14,7 +11,7 @@ namespace SPTOpenSesame.Patches
     {
         protected override MethodBase GetTargetMethod()
         {
-            return typeof(GameWorld).GetMethod("OnGameStarted", BindingFlags.Public | BindingFlags.Instance);
+            return typeof(GameWorld).GetMethod(nameof(GameWorld.OnGameStarted), BindingFlags.Public | BindingFlags.Instance);
         }
 
         [PatchPostfix]
