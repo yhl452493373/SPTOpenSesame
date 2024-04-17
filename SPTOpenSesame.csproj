@@ -8,7 +8,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
 <!--        <DependencyVersion>0.14.1.2.29197</DependencyVersion>-->
-        <DependencyVersion>0.14.1.3.29351-sit</DependencyVersion>
+        <DependencyVersion>0.14.5.5.29704</DependencyVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,7 +21,7 @@
     <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
         <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all"/>
     </ItemGroup>
-    
+
     <ItemGroup>
         <Reference Include=".\References\$(DependencyVersion)\Aki.Reflection.dll">
             <Private>False</Private>
@@ -30,9 +30,6 @@
             <Private>False</Private>
         </Reference>
         <Reference Include=".\References\$(DependencyVersion)\BepInEx.dll">
-            <Private>False</Private>
-        </Reference>
-        <Reference Include=".\References\$(DependencyVersion)\Aki.Common.dll">
             <Private>False</Private>
         </Reference>
         <Reference Include="0Harmony">
