@@ -7,8 +7,8 @@
         <Version>1.0.0</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
-<!--        <DependencyVersion>0.14.1.2.29197</DependencyVersion>-->
-        <DependencyVersion>0.14.5.5.29704-sit</DependencyVersion>
+        <DependencyVersion>0.14.5.6.29744</DependencyVersion>
+<!--        <DependencyVersion>0.14.5.5.29704-sit</DependencyVersion>-->
     </PropertyGroup>
 
     <ItemGroup>
